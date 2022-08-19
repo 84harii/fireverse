@@ -7,6 +7,6 @@ interface StoreType {
 }
 
 export const useStore = create<StoreType>((set: any) => ({
-  currentUser: undefined,
+  currentUser: null,
   setCurrentUser: (user) => set({ currentUser: user }),
 }));
